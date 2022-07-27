@@ -20,12 +20,12 @@ Amaro é uma API que simula uma pequena parte do sistema de uma loja virtual, po
 
 <h2 id="link">🔗 Link base da API</h2>
 
-### - https://wirecard-case-adeir-moreira.herokuapp.com/
+### - https://amaro-adeir-moreira.herokuapp.com/
 
 <h2 id="documentação">📃 Documentação do Postman</h2>
 Na documentação você encontra as instruções de como usar e o que cada endPoint espera receber. Você também pode clicar em "Run in Postman" para rodar os endpoint no seu postman.
 
-### - [Postman](https://documenter.getpostman.com/view/20351643/UzXKXKLD)
+### - [Postman](https://documenter.getpostman.com/view/20351643/UzXNVHpT)
 
 <h2 id="features">✔️ Features</h2>
 
