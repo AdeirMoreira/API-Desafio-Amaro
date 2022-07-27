@@ -38,8 +38,8 @@ EndPoint para cadastrar um produto. O dados devem ser enviados em formato JSON. 
 
 ~~~JSON
 {
-    "name":"Iphone 13",
-    "tags":["celunar","iphone","apple"]
+    "name":"Camisa Preta",
+    "tags":["camisa","casual","verão"]
 }
 ~~~
 
@@ -48,12 +48,12 @@ O Endpoint para busca de produtos. Se a busca for por id ou por name, os termos 
 
 ## Exemplos:
 
-### BUSCA POR ID - Caminho: <a href="#link">Link da API</a>/product/?id=4764b238-57b3-40fc-ac26-01842f954c22
-### BUSCA POR NAME - Caminho: <a href="#link">Link da API</a>/product/?name=xbox
+### BUSCA POR ID - Caminho: <a href="#link">Link da API</a>/product/?id=cb966f31-aab5-4f69-9067-5a552332c720
+### BUSCA POR NAME - Caminho: <a href="#link">Link da API</a>/product/?name=calça
 ### BUSCA POR TAGS - Caminho: <a href="#link">Link da API</a>/product
 ~~~JSON
 {
-    "tags":["controle","game","microsoft"]
+    "tags":["casual"]
 }
 ~~~
 
