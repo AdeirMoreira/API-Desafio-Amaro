@@ -48,9 +48,9 @@ O Endpoint para busca de produtos. Se a busca for por id ou por name, os termos 
 
 ## Exemplos:
 
-### BUSCA POR ID - Caminho: <a href="#link">Link da API</a>/product/?id=cb966f31-aab5-4f69-9067-5a552332c720
-### BUSCA POR NAME - Caminho: <a href="#link">Link da API</a>/product/?name=calça
-### BUSCA POR TAGS - Caminho: <a href="#link">Link da API</a>/product
+##### BUSCA POR ID - Caminho: <a href="#link">Link da API</a>/product/?id=cb966f31-aab5-4f69-9067-5a552332c720
+##### BUSCA POR NAME - Caminho: <a href="#link">Link da API</a>/product/?name=calça
+##### BUSCA POR TAGS - Caminho: <a href="#link">Link da API</a>/product
 ~~~JSON
 {
     "tags":["casual"]
