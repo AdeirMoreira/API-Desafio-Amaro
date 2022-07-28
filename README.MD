@@ -29,7 +29,7 @@ Na documentação você encontra as instruções de como usar e o que cada endPo
 - [Documentação](https://documenter.getpostman.com/view/20351643/UzXNVHpT)
 - Você tambem pode usar o arquivo JSON  com os endPonins se tiver o postman instalado na sua máquina.
 - [POSTMAN](https://www.postman.com/downloads/)
-- [Labenu-Music-Awards-IDP.postman_collection.json](https://github.com/AdeirMoreira/Projeto-Music-Awards/blob/master/Labenu-Music-Awards-IDP.postman_collection.json)
+- [Labenu-Music-Awards-IDP.postman_collection.json](https://github.com/AdeirMoreira/Desafio-Amaro/blob/main/Amaro.postman_collection.json)
 
 <h2 id="features">✔️ Features</h2>
 
