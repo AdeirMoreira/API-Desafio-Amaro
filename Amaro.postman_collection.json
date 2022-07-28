@@ -1,0 +1,234 @@
+{
+	"info": {
+		"_postman_id": "59dd5550-93f9-44c6-929e-4b5ec9d28868",
+		"name": "Amaro",
+		"description": "API para cadastro de produtos e consulta por Id, Name ou Tags.\n\nAPI LINK BASE: [https://amaro-adeir-moreira.herokuapp.com/](https://amaro-adeir-moreira.herokuapp.com/)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20351643"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"CALÇA JEANS SUPER SKINNY\",\r\n    \"tags\": [\"calça\", \"jeans\", \"casual\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://amaro-adeir-moreira.herokuapp.com/product/register",
+					"protocol": "https",
+					"host": [
+						"amaro-adeir-moreira",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"product",
+						"register"
+					]
+				},
+				"description": "EndPoint para cadastrar um produto. Espera receber o nome do produto e as tags relacionadas a ele."
+			},
+			"response": [
+				{
+					"name": "Register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"CALÇA JEANS SUPER SKINNY\",\r\n    \"tags\": [\"calça\", \"jeans\", \"casual\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://amaro-adeir-moreira.herokuapp.com/product/register",
+							"protocol": "https",
+							"host": [
+								"amaro-adeir-moreira",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"product",
+								"register"
+							]
+						}
+					},
+					"status": "Produto Registrado com sucesso!",
+					"code": 201,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 27 Jul 2022 18:53:12 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Search",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tags\":[\"casual\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://amaro-adeir-moreira.herokuapp.com/product/?id=cb966f31-aab5-4f69-9067-5a552332c720&name=casual",
+					"protocol": "https",
+					"host": [
+						"amaro-adeir-moreira",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"product",
+						""
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "cb966f31-aab5-4f69-9067-5a552332c720"
+						},
+						{
+							"key": "name",
+							"value": "casual"
+						}
+					]
+				},
+				"description": "EndPoint de busca por produtos por Id, Name ou tag. Caso a pesquisa seja por id ou por nome, o termo de busca deve ser passado por Query, caso a pesquisa seja por tags, devem ser enviadas no corpo da requisição em um array de strings.\n\nBusca por ID: LINKBASE/product?id=cb966f31-aab5-4f69-9067-5a552332c720\n\nBusca por NAME: LINKBASE/product?name=casual\n\nBusca por Tags: LINKBASE/product"
+			},
+			"response": [
+				{
+					"name": "Search",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tags\":[\"casual\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://amaro-adeir-moreira.herokuapp.com/product/?id=cb966f31-aab5-4f69-9067-5a552332c720&name=casual",
+							"protocol": "https",
+							"host": [
+								"amaro-adeir-moreira",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"product",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "cb966f31-aab5-4f69-9067-5a552332c720"
+								},
+								{
+									"key": "name",
+									"value": "casual"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "87"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"57-FI9qvvOkgzZiQuz6dDIrI6jBFR4\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 27 Jul 2022 19:45:16 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"cb966f31-aab5-4f69-9067-5a552332c720\",\n    \"name\": \"VESTIDO MOLETOM COM CAPUZ MESCLA\"\n}"
+				}
+			]
+		}
+	]
+}
