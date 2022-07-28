@@ -4,6 +4,7 @@
 <a href="#link">Link da API</a> |
 <a href="#documentação">Documentação</a> |
 <a href="#features">Features</a> |
+<a href="#back">Rodando o back-end</a> |
 <a href="#desenvolvedores">Desenvolvedores</a>
 </p>
 
@@ -25,7 +26,10 @@ Amaro é uma API que simula uma pequena parte do sistema de uma loja virtual, po
 <h2 id="documentação">📃 Documentação do Postman</h2>
 Na documentação você encontra as instruções de como usar e o que cada endPoint espera receber. Você também pode clicar em "Run in Postman" para rodar os endpoint no seu postman.
 
-### - [Postman](https://documenter.getpostman.com/view/20351643/UzXNVHpT)
+- [Documentação](https://documenter.getpostman.com/view/20351643/UzXNVHpT)
+- Você tambem pode usar o arquivo JSON  com os endPonins se tiver o postman instalado na sua máquina.
+- [POSTMAN](https://www.postman.com/downloads/)
+- [Labenu-Music-Awards-IDP.postman_collection.json](https://github.com/AdeirMoreira/Projeto-Music-Awards/blob/master/Labenu-Music-Awards-IDP.postman_collection.json)
 
 <h2 id="features">✔️ Features</h2>
 
@@ -56,6 +60,36 @@ O Endpoint para busca de produtos. Se a busca for por id ou por name, os termos 
     "tags":["casual"]
 }
 ~~~
+
+<h2 id="back"> 🎲 Rodando o Back End (servidor)</h2>
+
+### Pre-Requisitos
+
+- Para rodar o projeto você vai precisar do [Node.JS](https://nodejs.org/en/download/),
+- Uma instancia de um banco de dados MySQL
+- Um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
+
+### Como instalar e Rodar
+* Para baixar o projeto
+```
+1. git clone https://github.com/AdeirMoreira/Projeto-Music-Awards.git
+2. cd Projeto-Music-Awards
+```
+* Para instalar e rodar o projeto
+```
+3. npm install
+4. npm dev
+    ou
+3. yarn install
+4. yarn dev
+```
+* Para rodar os testes 
+```
+5. npm test
+5. yarn test
+```
+
+Renomeie o arquivo ```.env.example```  para ```.env``` e preencha as variáveis com seus dados do banco de dados MySQL. É muito importante para a execução do servidor.
 
 
 <h2 id="desenvolvedores">👨‍💻 Desenvolvedor</h2>
