@@ -72,7 +72,7 @@ O Endpoint para busca de produtos. Se a busca for por id ou por name, os termos 
 ### Como instalar e Rodar
 * Para baixar o projeto
 ```
-1. git clone https://github.com/AdeirMoreira/Projeto-Music-Awards.git
+1. git clone https://github.com/AdeirMoreira/API-Desafio-Amaro.git
 2. cd Projeto-Music-Awards
 ```
 * Para instalar e rodar o projeto
